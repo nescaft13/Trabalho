@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 04 - formulario</title>
+    <h1 align="center"><img src="https://lulacerda.ig.com.br/wp-content/uploads/2021/02/EtT229nXEAIN5me.jpeg" alt=""
+            width="370" height="150">
+    </h1>
+</head>
+
+<body>
+
+    <font align="center" color="blue" face=" Helvetica">
+        <h2>Cadastro senai mg aluno</h2>
+    </font>
+
+    <fieldset size="4">
+        <legend>Dados pessoais</legend>
+
+        <form action="enviar.php" method="post" name="cadastro">
+
+            <tr>
+                <td>
+                    <label for="">Digite nome completo:</label>
+                </td>
+                <td>
+                    <input type="text" id="nome" name="nome" maxlength="80" placeholder="digite seu nome completo"
+                        required>
+                </td>
+            </tr>
+            <br>
+            <br>
+            <tr>
+                <td>
+                    <label>Digite sua data de nascimento: </label>
+                </td>
+                <td>
+                    <input type="date" id="data-nasc" min="1960-01-01" max="2006-01-01" maxlength="80"
+                        placeholder="digite seu nome completo" name="data-nasc" required>
+
+                </td>
+            </tr>
+
+            <br>
+            <br>
+            <tr>
+
+                <td>
+                    <label for="">Digite seu RG:</label>
+                </td>
+                <td>
+                    <input type="text" id="RG" name="nome" maxlength="80" placeholder="Digite seu RG" required>
+                </td>
+            </tr>
+            <br>
+            <br>
+            <tr>
+                <td>
+                    <label for=""> Difite seu cpf</label>
+                </td>
+                <td>
+                    <input type="number" id="cpf" max="99999999999" maxlength="13" name="cpf"
+                        placeholder="digite seu cpf" required>
+                </td>
+            </tr>
+            <br>
+            <br>
+
+
+            <tr>
+                <td> <label for="">Anexar foto da identidade:</label>
+                    <input type="file" id="foto" name="required">
+                </td>
+                <br>
+                <br>
+            <tr>
+                <td>
+                    <label>email</label>
+                </td>
+                <td>
+                    <input type="email" id="email" email="email" maxlength="20" placeholder="digite seu email" required>
+                    <input type="password" id="senha" name="senha" placeholder="digite sua senha">
+                    <br>
+                    <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">sexo:</label>
+                    <br>
+                </td>
+                <td>
+                <td>
+                    <input type="radio" id="sexo" value="Nao_definino" name="sexo">
+                    <label for="">Prefiro nao informar</label>
+
+                    <br>
+                    <input type="radio" id="sexo" value="masculino" name="sexo">
+                    <label for="">masculino </label>
+
+                    <br>
+                    <input type="radio" id="sexo" value="feminino" name="sexo">
+                    <label for="">feminino </label>
+                </td>
+            </tr>
+            <br>
+            <br>
+
+            <tr>
+                <td>
+                    <label for=":">cidade:</label>
+                </td>
+                <td>
+                    <select name="cidade" id="cidade" required>
+                        <option value="" selected="selected">selecione</option>
+
+                        <option value="Belo horizonte">Belo horinzonte</option>
+                        <option value="Riberao das neves">Riberao das neves</option>
+                        <option value="contagem">contagem</option>
+                        <option value="Betim">Betim</option>
+                        <option value="Ibiriter">Ibiriter</option>
+                        <option value="Esmeraldas">Esmeraldas</option>
+                </td>
+
+
+                </select>
+
+
+
+    </fieldset>
+
+    </tr>
+
+    <fieldset>
+        <legend>Dados do curso</legend>
+
+        </tr>
+        <tr>
+
+
+            <td><label for="">Quais cursos que queria fazer?</label></td>
+            <br>
+            <td>
+                <input type="checkbox" id="TI" name="TI" values="TI">
+                <label for="">Tecnologia da informação</label>
+                <br>
+
+                <input type="checkbox" id="DS" name="DS" values="DS">
+                <label for="">Desenvolvimento de sistema</label>
+                <br>
+
+                <input type="checkbox" id="RC" name="RC" values="RC">
+                <label for="">Redes de computadores</label>
+                <br>
+
+                <input type="checkbox" id="dw" name="dw" values="dw">
+                <label for="">Desenvolvimento Web</label>
+            </td>
+
+
+        </tr>
+
+        </tr>
+        <br>
+        <br>
+        <tr>
+            <td>
+                <details>
+                    <summary>Termos e Serviços para Cadastro de Alunos do SENAI</summary>
+
+                    <br>
+
+                    1. O cadastro é obrigatório para todos os alunos do SENAI.
+                    <br>
+                    2. As informações fornecidas no cadastro devem ser precisas e atualizadas.
+                    <br>
+                    3. O aluno é responsável por manter a segurança de suas credenciais de login.
+                    <br>
+                    4. O aluno concorda em cumprir todas as políticas e regulamentos do SENAI.
+                    <br>
+                    5. O aluno concorda em não compartilhar seu acesso ao portal com outras pessoas.
+                    <br>
+                    6. O aluno concorda em não usar o portal para fins ilegais ou não autorizados.
+                    <br>
+                    7. O SENAI se reserva o direito de suspender ou encerrar o acesso do aluno ao portal a
+                    qualquer
+                    momento,
+                    por
+                    qualquer motivo.
+                    <br>
+                    8. O SENAI se reserva o direito de alterar estes termos e serviços a qualquer momento, sem
+                    aviso
+                    prévio.
+                    <br>
+                    <br>
+                    Ao clicar em Aceitar, você concorda com estes termos e serviços.
+
+
+
+                    <input type="checkbox" readonly value="aceitar" checked id="aceitar">
+
+
+
+                </details>
+            </td>
+        </tr>
+
+
+
+
+        </td>
+        </tr>
+        </td>
+        </tr>
+
+
+
+
+
+
+
+
+    </fieldset>
+
+    <tr>
+        <td>
+            <legend>comentario</legend>
+            <textarea name="coment" id="coment" cols="40" rows="5" maxlength="240" required></textarea>
+            <br>
+
+
+            <input type="submit" id="enviar" name="enviar" values="enviar dados" />
+            <input type="reset" name="limpar" id="limpar" values="limpar" />
+            </form>
+        </td>
+    </tr>
+
+    <h1><img src="https://lulacerda.ig.com.br/wp-content/uploads/2021/02/EtJLXE6XEAEOYmX-1024x681.jpeg" alt=""
+            width="370" height="150"></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
